@@ -1,8 +1,10 @@
-function validation(_val){
-    if(isFinite(_val)){
-        return "ERR"
-    } else {
-        return _val
+function validationBinary(_val){
+    for(var i = 0; i < _val.length; i++){
+        if(_val.charAt(i) != 1 && _val.charAt(i) != 0){
+            return "ERR"
+        } else {
+            return _val
+        }
     }
 }
 
@@ -28,7 +30,7 @@ function callFunc(_ref, _val){
     let ref = String(_ref)
     switch(ref){
         case "binary-to-decimal": 
-            console.log(btdConv(validation(_val)))
+            console.log(btdConv(validationBinary(_val)))
             break;
         default:
             console.log('ERR')
