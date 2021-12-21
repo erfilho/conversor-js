@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <title> Conversor </title>
+</head>
+<body>
+    <section id="navbar">
+        <div id="link-list">
+            <ul>
+                <li>
+                    <a href="#" id="active-a"> Home </a>
+                </li>
+                <li>
+                    <a href="#" id="inactive-a"> About </a>
+                </li>
+                <li>
+                    <a href="#" id="inactive-a"> Contact us </a>
+                </li>
+            </ul>
+        </div>
+        <label>
+        Select here:
+            <div id="conv-selector">
+                <select id="conv-option">
+                    <option value="binary-to-decimal"> Binary to Decimal </option>
+                    <option value="decimal-to-binary"> Decimal to Binary </option>
+                    <option value="brl-to-usd"> BRL to USD </option>
+                    <option value="usd-to-brl"> USD to BRL </option>
+                </select>
+            </div>
+        </label>
+    </section>
+    <section id="main-container">
+        <div id="main-content">
+            <input type="text" id="input-main" placeholder="Digit here..."></input>
+            <input type="submit" id="submit-main" onclick="typeCheck()"></input>
+            <input type="text" disabled>
+        </div>
+    </section>
+</body>
+</html>
