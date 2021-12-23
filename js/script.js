@@ -44,11 +44,20 @@ function dtbConv(_val){
 }
 
 function brltousdConv(_val){
+    try{
+        let money = Dinero
+        
+    }catch(error){
 
+    }
 }
 
 function usdtobrlConv(_val){
+    try{
 
+    }catch(error){
+        
+    }
 }
 
 // função utilizada para separar as funções com switch de acordo com o valor do option
