@@ -43,23 +43,6 @@ function dtbConv(_val){
     return res
 }
 
-function brltousdConv(_val){
-    try{
-        let money = Dinero
-        
-    }catch(error){
-
-    }
-}
-
-function usdtobrlConv(_val){
-    try{
-
-    }catch(error){
-        
-    }
-}
-
 // função utilizada para separar as funções com switch de acordo com o valor do option
 function callFunc(_ref, _val){
     try {
@@ -73,12 +56,6 @@ function callFunc(_ref, _val){
             // case da função que converte decimal para binário
             case "decimal-to-binary":
                 inputRes.value = dtbConv(_val)
-                break;
-            case "brl-to-usd":
-                inputRes.value = brltousdConv(_val)
-                break;
-            case "usd-to-brl":
-                inputRes.value = usdtobrlConv(_val)
                 break;
             default:
                 throw "Error in call function\n Function non recognitzed!"
